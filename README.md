@@ -1,5 +1,5 @@
 # Roger-Skyline-1
-## A 42-school project. Involves the use of basic sysadmin/network tools and the creation of my first web server.
+*A 42-school project. Involves the use of basic sysadmin/network tools and the creation of my first web server.*
 
 
 ## Useful links!  
