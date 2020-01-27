@@ -4,11 +4,11 @@
 
 ## Useful links!  
 
-* UFW Config:
-https://help.ubuntu.com/community/UFW
-
 * Installing Debian:
 https://medium.com/platform-engineer/how-to-install-debian-linux-on-virtualbox-with-guest-additions-778afa0ee7e0
+
+* UFW Config:
+https://help.ubuntu.com/community/UFW
 
 * Protecting against portscans with Port Sentry:
 https://en-wiki.ikoula.com/en/To_protect_against_the_scan_of_ports_with_portsentry
