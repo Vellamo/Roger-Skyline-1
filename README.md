@@ -4,23 +4,23 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 ## Useful commands!
 
-sudo <cmd>
-ufw
-service --status-all
-service <service name> stop/restart/start
-adduser <name>
-usermod -Ag sudo <name>
-ssh -i <keyfile> <IP> -p <port>
-crontab -e 
+- sudo <cmd>
+- ufw
+- service --status-all
+- service <service name> stop/restart/start
+- adduser <name>
+- usermod -Ag sudo <name>
+- ssh -i <keyfile> <IP> -p <port>
+- crontab -e 
 
 ## Useful files/locations!
 
-/etc/aliases
-/etc/default/portsentry
-/etc/fail2ban/jail.local
-/etc/hosts.deny
-/etc/network/interfaces.d/
-/var/mail/
+- /etc/aliases
+- /etc/default/portsentry
+- /etc/fail2ban/jail.local
+- /etc/hosts.deny
+- /etc/network/interfaces.d/
+- /var/mail/
 
 ## Useful links!  
 
