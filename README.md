@@ -4,13 +4,13 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 ## Useful commands!
 
-- sudo <cmd>
+- sudo <cmd\>
 - ufw
 - service --status-all
-- service <service name> stop/restart/start
-- adduser <name>
-- usermod -Ag sudo <name>
-- ssh -i <keyfile> <IP> -p <port>
+- service <service name\> stop/restart/start
+- adduser <name\>
+- usermod -Ag sudo <name\>
+- ssh -i <keyfile\> <IP\> -p <port\>
 - crontab -e 
 
 ## Useful files/locations!
