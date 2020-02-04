@@ -4,11 +4,11 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 ## Workflow
 
-1. Installed VM to specifications.
+1. Installed VM to specifications -- I used Debian.
 1. Check partition sizes with `cfdisk`.
 1. apt-get install required services. 
 1. adduser & give them Sudo permissions.
-1. Modify /etc/network/interfaces.d/ to make a static IP, as outlined in the brief.
+1. Modify /etc/network/interfaces.d/ to specifications outlined in the brief (Static IP, etc).
 1. Modify /etc/ssh/sshd_config to alter the default SSH port, as outlined in the brief. 
 1. ssh-keygen a new SSH key for accessing the remote. Copy it to the remote and use this to connect. 
 1. Configure UFW to default to deny incoming and allow outgoing. Open only required ports.
