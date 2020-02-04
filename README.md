@@ -9,13 +9,16 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 1. apt-get install required services. 
 1. adduser & give them Sudo permissions.
 1. Modify /etc/network/interfaces.d/ to make a static IP, as outlined in the brief.
+1. Modify /etc/ssh/sshd_config to alter the default SSH port, as outlined in the brief. 
 1. ssh-keygen a new SSH key for accessing the remote. Copy it to the remote and use this to connect. 
 1. Configure UFW to default to deny incoming and allow outgoing. Open only required ports.
 1. Configure F2B for DOS protection. Modify jail.local and create appropriate filters.
 1. Configure PortSentry for port scanning protection. Modify /etc/default/portsentry & /etc/portsentry/portsentry.conf
 1. Use `systemctl --type=service --state=active` to find non-vital services running and `systemctl disable <service>` to disable them. `service --status-all` and `serivce <service> disable` is also another option.
-1. Create/configure Crontab scripts. 
+1. Create/configure Crontab scripts, as outlined in the brief. 
 1. Create and configure SSL certificates. 
+  1. (OPTIONAL) Create pretty website.
+1. Success!
 
 ## Tools used:
 
