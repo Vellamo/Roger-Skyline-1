@@ -17,7 +17,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 1. Use `systemctl --type=service --state=active` to find non-vital services running and `systemctl disable <service>` to disable them. `service --status-all` and `serivce <service> disable` is also another option.
 1. Create/configure Crontab scripts, as outlined in the brief. 
 1. Create and configure SSL certificates. 
-  1. (OPTIONAL) Create pretty website.
+    1. (OPTIONAL) Create pretty website.
 1. Success!
 
 ## Tools used:
