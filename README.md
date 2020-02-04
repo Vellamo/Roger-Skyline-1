@@ -16,8 +16,11 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 1. Configure PortSentry for port scanning protection. Modify /etc/default/portsentry & /etc/portsentry/portsentry.conf
 1. Use `systemctl --type=service --state=active` to find non-vital services running and `systemctl disable <service>` to disable them. `service --status-all` and `serivce <service> disable` is also another option.
 1. Create/configure Crontab scripts, as outlined in the brief. 
-1. Create and configure SSL certificates. 
-    1. (OPTIONAL) Create pretty website.
+1. (OPTIONAL) Create pretty website.
+    1. Create and configure SSL certificates.
+    1. Use HTML/CSS etc. to make an *amazing* website. Put it someplace safe, I used /var/www/<sitename>
+    1. Modifiy /etc/nginx/sites-available/<website.conf> to ensure that SSL is enabled and that traffic is being correctly routed (from HTTP to HTTPS). 
+    1. Remove the symlink to "default" from the /etc/nginx/sites-available/ to ensure Nginx is publishing your content. 
 1. Success!
 
 ## Tools used:
