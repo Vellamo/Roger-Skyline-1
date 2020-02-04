@@ -8,7 +8,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 1. Check partition sizes with `cfdisk`.
     - Ensure one partition is '4.2GB'. Diffentiation between Gigabyte and Gibibyte in the brief left ambigious. Make your own decision on this matter.
 1. apt-get install required services.
-    1. Nginx, ufw, fail2ban, portsentry were all tools 
+    - Nginx, ufw, fail2ban, portsentry were all tools that I utilised. 
 1. adduser & give them Sudo permissions.
     - adduser <name\>
     - usermod -Ag sudo <name\>
