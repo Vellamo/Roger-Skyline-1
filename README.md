@@ -6,7 +6,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 1. Installed VM to specifications -- I used Debian. Ensure VM filesize/disk space is 8GB. 
 1. Check partition sizes with `cfdisk`.
-    - Ensure one partition is '4.2GB'. Diffentiation between Gigabyte and Gibibyte in the brief left ambigious. Make your own decision on this matter.
+    - Ensure one partition is '4.2GB'. Diffentiation between Gigabyte and Gibibyte in the brief left ambigous. Make your own decision on this matter.
 1. apt-get install required services.
     - Nginx, ufw, fail2ban, portsentry were all tools that I utilised. 
 1. adduser & give them Sudo permissions.
