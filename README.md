@@ -6,13 +6,24 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 1. Installed VM to specifications -- I used Debian.
 1. Check partition sizes with `cfdisk`.
-1. apt-get install required services. 
+    - Ensure one partition is '4.2GB'. Diffentiation between Gigabyte and Gibibyte in the brief left ambigious. Make your own decision on this matter.
+1. apt-get install required services.
+    1. Nginx, ufw, fail2ban, portsentry were all tools 
 1. adduser & give them Sudo permissions.
+    - adduser <name\>
+    - usermod -Ag sudo <name\>
 1. Modify /etc/network/interfaces.d/ to specifications outlined in the brief (Static IP, etc).
 1. Modify /etc/ssh/sshd_config to alter the default SSH port, as outlined in the brief. 
-1. ssh-keygen a new SSH key for accessing the remote. Copy it to the remote and use this to connect. 
+1. ssh-keygen a new SSH key for accessing the remote. Copy it to the remote and use this to connect.
 1. Configure UFW to default to deny incoming and allow outgoing. Open only required ports.
+    - Ensure SSH connections still work and use a portscan tool to check for any ports that remain open. 
+    - I limited UFW to allowing only 80/tcp, <ssh_port>/tcp and 443/tcp. 
 1. Configure F2B for DOS protection. Modify jail.local and create appropriate filters.
+    - Modify `ignoreip` if needed, as well as `bantime`, `findtime` and `maxretry`. 
+    - Use sendmail as the mta. 
+    - Ensure the correct default action is taken `action = %(action_mwl)s` so that you recieve mail.
+    - You can use several default apache filters as Nginx filters, some will require configuration. 
+    - (Optional) You can also use F2B to detect and attempt to ban portscans. 
 1. Configure PortSentry for port scanning protection. Modify /etc/default/portsentry & /etc/portsentry/portsentry.conf
 1. Use `systemctl --type=service --state=active` to find non-vital services running and `systemctl disable <service>` to disable them. `service --status-all` and `serivce <service> disable` is another option.
 1. Create/configure Crontab scripts, as outlined in the brief. 
@@ -34,14 +45,12 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 ## Useful commands!
 
-- sudo <cmd\>
-- ufw
-- service --status-all
-- service <service name\> stop/restart/start
-- adduser <name\>
-- usermod -Ag sudo <name\>
-- ssh -i <keyfile\> <IP\> -p <port\>
-- crontab -e 
+- `sudo <cmd\>`
+- `ufw`
+- `service --status-all`
+- `service <service name\> stop/restart/start`
+- `ssh -i <keyfile\> <IP\> -p <port\>`
+- `crontab -e`
 
 ## Useful files/locations!
 
