@@ -4,7 +4,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 
 ## Workflow
 
-1. Installed VM to specifications -- I used Debian.
+1. Installed VM to specifications -- I used Debian. Ensure VM filesize/disk space is 8GB. 
 1. Check partition sizes with `cfdisk`.
     - Ensure one partition is '4.2GB'. Diffentiation between Gigabyte and Gibibyte in the brief left ambigious. Make your own decision on this matter.
 1. apt-get install required services.
@@ -23,6 +23,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
     - Use sendmail as the mta. 
     - Ensure the correct default action is taken `action = %(action_mwl)s` so that you recieve mail.
     - You can use several default apache filters as Nginx filters, some will require configuration. 
+    - Create a new DOS jail and filter. 
     - (Optional) You can also use F2B to detect and attempt to ban portscans. 
 1. Configure PortSentry for port scanning protection. Modify /etc/default/portsentry & /etc/portsentry/portsentry.conf
 1. Use `systemctl --type=service --state=active` to find non-vital services running and `systemctl disable <service>` to disable them. `service --status-all` and `serivce <service> disable` is another option.
@@ -31,7 +32,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
     - Create and configure SSL certificates.
     - Use HTML/CSS etc. to make an *amazing* website. Put it someplace safe, I used /var/www/<sitename>
     - Modifiy /etc/nginx/sites-available/<website.conf> to ensure that SSL is enabled and that traffic is being correctly routed (from HTTP to HTTPS). 
-    1. Remove the symlink to "default" from the /etc/nginx/sites-available/ to ensure Nginx is publishing your content. 
+    - Remove the symlink to "default" from the /etc/nginx/sites-available/ to ensure Nginx is publishing your content. 
 1. Success!
 
 ## Tools used:
