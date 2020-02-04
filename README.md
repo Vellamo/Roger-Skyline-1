@@ -2,6 +2,14 @@
 *A 42-school project. Involves the use of basic sysadmin/network tools and the creation of my first web server.*
 Due to the size of the VDI (and the nature of the project), it is not included as part of this repository.
 
+## Tools used:
+
+- Nginx 
+- UFW
+- Fail2ban
+- Portsentry
+- Cron
+
 ## Useful commands!
 
 - sudo <cmd\>
