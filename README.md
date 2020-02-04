@@ -9,6 +9,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 - Fail2ban
 - Portsentry
 - Cron
+- HTML & CSS
 
 ## Useful commands!
 
