@@ -53,6 +53,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 - `service <service name\> stop/restart/start`
 - `ssh -i <keyfile\> <IP\> -p <port\>`
 - `crontab -e`
+- `nc -z -v {host-name-here} {port-range-here}`
 
 ## Useful files/locations!
 
