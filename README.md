@@ -87,3 +87,6 @@ https://www.w3schools.com/html/default.asp
 
 * Self-Signing SSL Cert:
 https://webtips4u.com/guides/linux/creating-a-self-signed-ssl-certificate-on-linux-or-unix-server/
+
+* A SlowLoris attack for use in testing DOS protection
+https://github.com/llaera/slowloris.pl
