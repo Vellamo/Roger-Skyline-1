@@ -41,6 +41,7 @@ Due to the size of the VDI (and the nature of the project), it is not included a
 - UFW
 - Fail2ban
 - Portsentry
+- nmap
 - Cron
 - HTML & CSS
 
