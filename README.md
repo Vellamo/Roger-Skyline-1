@@ -77,6 +77,7 @@ https://help.ubuntu.com/community/UFW
 
 * Fail2Ban Configuration
 https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-14-04
+https://easyengine.io/tutorials/nginx/fail2ban/
 
 * Protecting against portscans with Port Sentry:
 https://en-wiki.ikoula.com/en/To_protect_against_the_scan_of_ports_with_portsentry
